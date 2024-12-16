@@ -3,7 +3,7 @@
 # Função para atualizar o sistema
 function atualizar_sistema() {
     sudo pacman -Syyuu --noconfirm
-    flatpak update
+    flatpak update -y
 }
 
 # Função para limpar o sistema
@@ -60,6 +60,12 @@ if ! command -v notify-send &> /dev/null; then
     echo "O pacote libnotify não está instalado. Instale-o para receber notificações."
     exit 1
 fi
+
+##Completar o IP quando for realizar o backup
+#Do notebook para o desktop
+#sudo rsync -avzrp /mnt/sdb1/ robsonnakane@192.168.xx.xxx:/mnt/dm-1/
+#Do desktop para o notebook
+#sudo rsync -avzrp robsonnakane@192.168.xx.xxx:/mnt/dm-1/ /mnt/sdb1/
 
 # Função para verificar se há atualizações e informar o usuário
 function verificar_atualizacoes() {
