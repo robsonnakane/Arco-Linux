@@ -71,7 +71,7 @@ fi
 function verificar_atualizacoes() {
     houve_atualizacao=$(pacman -Qu | wc -l)
 
-    if [ $houve_atualizacao -gt 0 ]; then
+    if [ $houve_atualizacao -gt 1 ]; then
         echo "$(date +"%Y-%m-%d %H:%M:%S") - Houve atualizações. Deseja reiniciar agora? (s/n)"
         read resposta
         if [[ $resposta =~ ^[Yy]$ ]]; then
