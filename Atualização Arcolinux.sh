@@ -43,7 +43,7 @@ function instalar_pacote_flatpak() {
 }
 
 # Lista de pacotes a serem instalados
-pacotes=("fastfetch" "libnotify" "foomatic-db" "flatpak" "jdk-openjdk" "boxes" "thunderbird" "vlc" "audacious")
+pacotes=("fastfetch" "libnotify" "foomatic-db" "flatpak" "jdk-openjdk" "gnome-boxes" "thunderbird" "vlc" "audacious")
 pacotes_flatpak=("com.spotify.Client" "us.zoom.Zoom" "org.onlyoffice.desktopeditors" "com.skype.Client" "org.raspberrypi.rpi-imager" "org.gnome.Firmware" "org.kde.kdenlive" "ca.littlesvr.asunder" "org.chromium.Chromium" "org.gnome.gitlab.YaLTeR.VideoTrimmer" "com.warlordsoftwares.media-downloader" "org.gtkhash.gtkhash" "fr.handbrake.ghb" "net.fasterland.converseen" "com.transmissionbt.Transmission" "org.fedoraproject.MediaWriter")
 
 # Instala os pacotes
